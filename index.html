@@ -14,10 +14,14 @@
     <h1>Singup for our newsletter</h1>
     <p>Get the latest news on how your code is doing right in your inbox</p>
     <form class="" action="index.html" method="post">
-      <label for="Full Name">Full Name</label>
-      <input type="text" name="full_name" value="">
-
-      <label for="province_or_state">Province or state:</label>
+      <legend>Contact Information</legend>
+      <label for="full_name">Full Name</label><input type="text" name="full_name" value="" required>
+      <label for="email_address">Email Address</label><input type="email" name="email_address" value="" required>
+      <label for="phone_number">Phone Number</label><input type="tel" name="phone_number" value="">
+      <label for="street_address">Street Address</label><input type="text" name="street_address" value="">
+      <label for="street_address">Street Address</label><input type="text" name="street_address" value="">
+      <label for="city">City</label><input type="text" name="city" value="">
+      <label for="province_or_state">Province or state</label>
       <select class="" name="user_province_or_state">
         <option value="alberta">Alberta</option>
         <option value="british_columbia">British Columbia</option>
@@ -57,7 +61,7 @@
         Minnesota
         Mississippi
         Missouri
-        Montana 
+        Montana
         Nebraska
         Nevada
         New Hampshire
@@ -83,7 +87,23 @@
         Wisconsin
         Wyoming
       </select>
-
+      <label for="zip_postal_code">Zip or Postal Code</label><input type="text" name="zip_postal_code" value="">
     </form>
+    <form class="" action="index.html" method="post">
+      <legend>Newsletter</legend>
+      <p>Select the newsletter you would like to recieve.</p>
+      <input type="checkbox" name="html_news" value=""><label for="html_news">HTML News</label>
+      <input type="checkbox" name="css_news" value=""><label for="css_news">CSS News</label>
+      <input type="checkbox" name="javascript_news" value=""><label for="javascript_news">Javascript News</label>
+      <p>Newsletter Format</p>
+      <input type="checkbox" name="html" value=""><label for="html">HTML</label>
+      <input type="checkbox" name="plain_text" value=""><label for="plain_text">Plain Text</label>
+      <p>Other topics you'd like to hear about</p>
+      <textarea name="topics" rows="8" cols="80"></textarea>
+    </form>
+    <button type="button" name="button">Sign Up</button>
   </body>
+  <footer>
+    Copy Right The Code Review
+  </footer>
 </html>
