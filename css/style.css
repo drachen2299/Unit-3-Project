@@ -3,7 +3,6 @@
 ----------------------------------------------------------------------------------*/
 * {
   box-sizing: border-box;
-
 }
 
 h1 {
@@ -17,25 +16,72 @@ input[type=text],
 [type=email],
 [type=tel],
 select {
+  background-color: rgb(227, 224, 235);
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
-  border: .5px solid blue;
-  border-radius: 4px;
+  border: none;
+  text-align: left;
+
 }
+
 
 label {
   line-height: .8em;
-
 }
 
 header {
   background-color: rgb(24, 30, 51);
+  color: white;
   margin-top: auto;
   width: 100%;
 }
 
+input[placeholder]{
+  color: rgb(149, 167, 172);
+}
 
 /*----------------------------------------------------------------------------------
-                                  Base Styles
+                                  Focus and Selection
 ----------------------------------------------------------------------------------*/
+
+input::selection {
+  border-radius: 4px;
+  border: solid .3em;
+  border-color: darkblue;
+}
+
+/*----------------------------------------------------------------------------------
+                                  Media Queries
+----------------------------------------------------------------------------------*/
+@media (min-width: 769px) {
+  .container {
+    max-width: 50%;
+    margin: 0 auto;
+
+  }
+  input[type=text],
+  [type=email],
+  [type=tel],
+  select {
+    width: 70%;
+  }
+
+  #zip [type=text] {
+    width: 30%;
+  }
+  label {
+    width: 25%;
+    display: inline-block;
+    text-align: left;
+  }
+}
+
+/*----------------------------------------------------------------------------------
+                                   Clearfix
+ ----------------------------------------------------------------------------------*/
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
