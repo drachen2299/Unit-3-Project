@@ -2,7 +2,12 @@
                                   Base Styles
 ----------------------------------------------------------------------------------*/
 * {
+  font-family: 'PT Serif', serif;
   box-sizing: border-box;
+}
+
+h1, h2, h3, input, legend, p {
+
 }
 
 h1 {
@@ -33,8 +38,12 @@ label {
 header {
   background-color: rgb(24, 30, 51);
   color: white;
-  margin-top: auto;
+  height: 4em;
   width: 100%;
+}
+
+header h1 {
+  padding-top: .6em;
 }
 
 input[placeholder]{
