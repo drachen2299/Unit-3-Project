@@ -17,16 +17,47 @@ h1 {
   margin-top: 0;
 }
 
+.container {
+  margin: 0 auto;
+  width: 95%;
+}
+.tophead,
+.fs1,
 input[type=text],
 [type=email],
 [type=tel],
 select {
-  background-color: rgb(227, 224, 235);
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   border: none;
   text-align: left;
+
+}
+input[type=text],
+[type=email],
+[type=tel],
+select {
+  background-color: rgb(227, 224, 235);
+}
+
+fieldset {
+  border: none;
+}
+.tophead {
+  display: block;
+  border-bottom: 4px solid rgb(24, 30, 51);
+  margin-bottom: 5px;
+  text-align: center;
+  border-width: 95%;
+
+
+}
+
+.fs1 {
+  display: block;
+  border-top: 1px solid rgb(24, 30, 51);
+  border-width: 95%;
 
 }
 
@@ -58,7 +89,10 @@ textarea {
   resize: none;
 }
 
-
+.chkbox {
+  display: block;
+  margin-bottom: 10px;
+}
 
 .chkbox input,
 .chkbox label {
@@ -69,7 +103,7 @@ textarea {
 /*----------------------------------------------------------------------------------
                                   Focus and Selection
 ----------------------------------------------------------------------------------*/
-input:focus {
+.fs1 input:focus {
   border-radius: 1px;
   border: solid 1px rgb(24, 30, 51);
 }
@@ -85,18 +119,19 @@ input:focus {
     max-width: 50%;
     margin: 0 auto;
 
+
   }
-  input[type=text],
-  [type=email],
-  [type=tel],
-  select {
+  .fs1 input[type=text],
+  .fs1 input[type=email],
+  .fs1 input[type=tel],
+  .fs1 select {
     width: 70%;
   }
 
   #zip [type=text] {
     width: 30%;
   }
-  label {
+  .fs1 label {
     width: 25%;
     display: inline-block;
     text-align: left;

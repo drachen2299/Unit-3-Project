@@ -15,116 +15,124 @@
       <h1>The code review</h1>
     </header>
     <div class="container clearfix">
-    <h2>Singup for our newsletter</h2>
-    <p>Get the latest news on how your code is doing right in your inbox</p>
+      <div class="tophead">
+        <h2>Singup for our newsletter</h2>
+        <p>Get the latest news on how your code is doing right in your inbox</p>
+      </div>
+      <form class="col clearfix" action="index.html" method="post">
+        <fieldset class="fs1">
+          <h3>Contact Information</h3>
+          <label for="full_name">Full Name</label><input type="text" name="full_name" placeholder="Required">
+          <label for="email_address">Email Address</label><input type="email" name="email_address" placeholder="Required">
+          <label for="phone_number">Phone Number</label><input type="tel" name="phone_number" value="">
+          <label for="street_address">Street Address</label><input type="text" name="street_address" value="">
+          <label for="street_address">Street Address</label><input type="text" name="street_address" value="">
+          <label for="city">City</label><input type="text" name="city" value="">
+          <label for="province_or_state">Province or state</label>
+          <select name="user_province_or_state">
+            <optgroup label="Province">
+              <option value="ab">Alberta</option>
+              <option value="bc">British Columbia</option>
+              <option value="mb">Manitoba</option>
+              <option value="nb">New Brunswick</option>
+              <option value="nl"> Newfoundland and Labrador</option>
+              <option value="ns">Nova Scotia</option>
+              <option value="on">Ontario</option>
+              <option value="pe">Prince Edward Island</option>
+              <option value="qc">Quebec</option>
+              <option value="sk">Saskatchewan</option>
+              <option value="nt">Northwest Territories</option>
+              <option value="nu">Nunavut</option>
+              <option value="yt">Yukon</option>
+            </optgroup>
+            <optgroup label="State">
+              <option value="al">Alabama</option>
+              <option value="ak">Alaska</option>
+              <option value="az">Arizona </option>
+              <option value="ar">Arkansas </option>
+              <option value="ca">California </option>
+              <option value="co">Colorado </option>
+              <option value="ct">Connecticut </option>
+              <option value="de">Delaware </option>
+              <option value="fl">Florida</option>>
+              <option value="ga">Georgia </option>
+              <option value="hi">Hawaii</option>
+              <option value="id">Idaho </option>
+              <option value="il">Illinois</option>
+              <option value="in">Indiana</option>
+              <option value="ia">Iowa</option>
+              <option value="ks">Kansas</option>
+              <option value="ky">Kentucky</option>
+              <option value="la">Louisiana</option>
+              <option value="me">Maine</option>
+              <option value="md">Maryland</option>
+              <option value="ma">Massachusetts</option>
+              <option value="mi">Michigan</option>
+              <option value="mn">Minnesota</option>
+              <option value="ms">Mississippi</option>
+              <option value="mo">Missouri</option>
+              <option value="mt">Montana</option>
+              <option value="ne">Nebraska</option>
+              <option value="nv">Nevada</option>
+              <option value="nh">New Hampshire</option>
+              <option value="nj">New Jersey</option>
+              <option value="nm">New Mexico</option>
+              <option value="ny">New York</option>
+              <option value="nc">North Carolina</option>
+              <option value="nd">North Dakota</option>
+              <option value="oh">Ohio</option>
+              <option value="ok">Oklahoma</option>
+              <option value="or">Oregon</option>
+              <option value="pa">Pennsylvania</option>
+              <option value="ri">Rhode Island</option>
+              <option value="sc">South Carolina</option>
+              <option value="sd">South Dakota</option>
+              <option value="tn">Tennessee</option>
+              <option value="tx">Texas</option>
+              <option value="ut">Utah</option>
+              <option value="vt">Vermont</option>
+              <option value="va">Virginia</option>
+              <option value="wa">Washington</option>
+              <option value="wv">West Virginia</option>
+              <option value="wi">Wisconsin</option>
+              <option value="wy">Wyoming</option>
+            </optgroup>
+          </select>
+          <label  for="zip_postal_code">Zip or Postal Code</label><input id="zip" type="text" name="zip_postal_code" value="">
+        </fieldset>
+        <fieldset class="fs1">
+          <h3>Newsletter</h3>
+          <p>Select the newsletter you would like to recieve.</p>
+          <div class="chkbox">
+            <label for="html_news"><input type="checkbox" name="html_news" value="">HTML News</label>
+          </div>
+          <div class="chkbox">
+            <label for="css_news"><input type="checkbox" name="css_news" value="">CSS News</label>
+          </div>
+          <div class="chkbox">
+            <label for="javascript_news"><input type="checkbox" name="javascript_news" value="">Javascript News</label>
+          </div>
 
-    <form class="col clearfix" action="index.html" method="post">
-      <fieldset class="fs1">
-        <h3>Contact Information</h3>
-        <label for="full_name">Full Name</label><input type="text" name="full_name" placeholder="Required">
-        <label for="email_address">Email Address</label><input type="email" name="email_address" placeholder="Required">
-        <label for="phone_number">Phone Number</label><input type="tel" name="phone_number" value="">
-        <label for="street_address">Street Address</label><input type="text" name="street_address" value="">
-        <label for="street_address">Street Address</label><input type="text" name="street_address" value="">
-        <label for="city">City</label><input type="text" name="city" value="">
-        <label for="province_or_state">Province or state</label>
-        <select class="" name="user_province_or_state">
-          <optgroup label="Province">
-            <option value="ab">Alberta</option>
-            <option value="bc">British Columbia</option>
-            <option value="mb">Manitoba</option>
-            <option value="nb">New Brunswick</option>
-            <option value="nl"> Newfoundland and Labrador</option>
-            <option value="ns">Nova Scotia</option>
-            <option value="on">Ontario</option>
-            <option value="pe">Prince Edward Island</option>
-            <option value="qc">Quebec</option>
-            <option value="sk">Saskatchewan</option>
-            <option value="nt">Northwest Territories</option>
-            <option value="nu">Nunavut</option>
-            <option value="yt">Yukon</option>
-          </optgroup>
-          <optgroup label="State">
-            <option value="al">Alabama</option>
-            <option value="ak">Alaska</option>
-            <option value="az">Arizona </option>
-            <option value="ar">Arkansas </option>
-            <option value="ca">California </option>
-            <option value="co">Colorado </option>
-            <option value="ct">Connecticut </option>
-            <option value="de">Delaware </option>
-            <option value="fl">Florida</option>>
-            <option value="ga">Georgia </option>
-            <option value="hi">Hawaii</option>
-            <option value="id">Idaho </option>
-            <option value="il">Illinois</option>
-            <option value="in">Indiana</option>
-            <option value="ia">Iowa</option>
-            <option value="ks">Kansas</option>
-            <option value="ky">Kentucky</option>
-            <option value="la">Louisiana</option>
-            <option value="me">Maine</option>
-            <option value="md">Maryland</option>
-            <option value="ma">Massachusetts</option>
-            <option value="mi">Michigan</option>
-            <option value="mn">Minnesota</option>
-            <option value="ms">Mississippi</option>
-            <option value="mo">Missouri</option>
-            <option value="mt">Montana</option>
-            <option value="ne">Nebraska</option>
-            <option value="nv">Nevada</option>
-            <option value="nh">New Hampshire</option>
-            <option value="nj">New Jersey</option>
-            <option value="nm">New Mexico</option>
-            <option value="ny">New York</option>
-            <option value="nc">North Carolina</option>
-            <option value="nd">North Dakota</option>
-            <option value="oh">Ohio</option>
-            <option value="ok">Oklahoma</option>
-            <option value="or">Oregon</option>
-            <option value="pa">Pennsylvania</option>
-            <option value="ri">Rhode Island</option>
-            <option value="sc">South Carolina</option>
-            <option value="sd">South Dakota</option>
-            <option value="tn">Tennessee</option>
-            <option value="tx">Texas</option>
-            <option value="ut">Utah</option>
-            <option value="vt">Vermont</option>
-            <option value="va">Virginia</option>
-            <option value="wa">Washington</option>
-            <option value="wv">West Virginia</option>
-            <option value="wi">Wisconsin</option>
-            <option value="wy">Wyoming</option>
-          </optgroup>
-        </select>
-        <label  for="zip_postal_code">Zip or Postal Code</label><input id="zip" type="text" name="zip_postal_code" value="">
-      </fieldset>
-      <fieldset>
-        <h3>Newsletter</h3>
-        <p>Select the newsletter you would like to recieve.</p>
-        <div class="chkbox">
-          <label for="html_news"><input type="checkbox" name="html_news" value="">HTML News</label>
-          <label for="css_news"><input type="checkbox" name="css_news" value="">CSS News</label>
-          <label for="javascript_news"><input type="checkbox" name="javascript_news" value="">Javascript News</label>
-        </div>
-
-        <p>Newsletter Format</p>
-        <div class="chkbox">
-          <input type="checkbox" name="html" value=""><label for="html">HTML</label>
-          <input type="checkbox" name="plain_text" value=""><label for="plain_text">Plain Text</label>
-        </div>
+          <p>Newsletter Format</p>
+          <div class="chkbox">
+            <input type="checkbox" name="html" value=""><label for="html">HTML</label>
+          </div>
+          <div class="chkbox">
+            <input type="checkbox" name="plain_text" value=""><label for="plain_text">Plain Text</label>
+          </div>
 
 
-        <p>Other topics you'd like to hear about</p>
-        <textarea name="topics"></textarea>
-      </fieldset>
-      <fieldset>
-        <button type="button" name="button">Sign Up</button>
-      </fieldset>
-    </form>
+          <p>Other topics you'd like to hear about</p>
+          <textarea name="topics"></textarea>
+        </fieldset>
+        <fieldset>
+          <button type="button" name="button">Sign Up</button>
+        </fieldset>
+      </form>
+
+    </body>
+    <footer>
+      Copy Right The Code Review
+    </footer>
   </div>
-  </body>
-  <footer>
-    Copy Right The Code Review
-  </footer>
 </html>
