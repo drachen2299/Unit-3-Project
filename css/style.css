@@ -7,10 +7,11 @@
 }
 
 h1, h2, h3, input, legend, p, label {
-font-family: 'PT Serif', serif;
+  font-family: 'PT Serif', serif;
 }
 
 h1 {
+  font-family: 'Kodchasan', sans-serif;
   text-align: center;
   font-size: 2em;
   text-transform: uppercase;
@@ -20,7 +21,9 @@ h1 {
 .container {
   margin: 0 auto;
   width: 95%;
+  padding: 15px;
 }
+
 .tophead,
 input[type=text],
 [type=email],
@@ -33,8 +36,6 @@ select {
   text-align: left;
 }
 
-
-
 input[type=text],
 [type=email],
 [type=tel],
@@ -45,34 +46,37 @@ select {
 fieldset {
   border: none;
 }
+
 .tophead {
   display: block;
   border-bottom: 4px solid rgb(24, 30, 51);
-  margin-bottom: 5px;
   text-align: center;
-  border-width: 100%;
-  margin: 0 auto;
+}
 
-
+.tophead p {
+  font-size: 1em;
+  color: rgb(176, 176, 176);
+  font-weight: lighter;
 }
 
 .fs1 {
   display: block;
   border-top: 1px solid rgb(24, 30, 51);
   margin: 0 auto;
-
 }
 
+.forms2 {
+  background-color: rgb(255, 255, 241);
+}
 
 label {
   line-height: .8em;
-
 }
 
 header {
   background-color: rgb(24, 30, 51);
   color: white;
-  height: 4em;
+  height: 5em;
   width: 100%;
 }
 
@@ -80,7 +84,7 @@ header h1 {
   padding-top: .6em;
 }
 
-input[placeholder]{
+input[placeholder] {
   color: rgb(149, 167, 172);
   text-align: right;
 }
@@ -119,63 +123,70 @@ button {
   display: inline-block;
   margin-bottom: 0;
   vertical-align: middle;
-
 }
+
 .chkbox input {
   margin-right: 10px;
 }
+
+footer {
+  font-family: 'Kodchasan', sans-serif;
+  text-align: center;
+}
+
 /*----------------------------------------------------------------------------------
                                   Focus and Selection
 ----------------------------------------------------------------------------------*/
 .fs1 input:focus,
 textarea:focus,
 select:focus {
-  border-radius: 1px;
+  border-radius: 2px;
   border: solid 1px rgb(24, 30, 51);
 }
 
 input[type="text"]:focus,
-input[type="email"]:focus{
-text-align:left;
+input[type="email"]:focus,
+input[type="tel"]:focus {
+  text-align: left;
 }
+
 button:active {
-position:relative;
-	top:1px;
+  position: relative;
+  top: 1px;
 }
 
 button:focus {
   outline: none;
 }
 
-
-
-
 /*----------------------------------------------------------------------------------
                                   Media Queries
 ----------------------------------------------------------------------------------*/
 @media (min-width: 769px) {
   .container {
-    max-width: 50%;
-    margin: 0 auto;
-
-
+    max-width: 40%;
   }
+
   .fs1 input[type=text],
   .fs1 input[type=email],
   .fs1 input[type=tel],
   .fs1 select {
-    width: 70%;
+    width: 73%;
+  }
+
+  .fs1 input:last-child {
+    width: 30%;
   }
 
   #zip [type=text] {
     width: 30%;
   }
+
   .fs1 label {
-    width: 25%;
+    width: 26%;
     display: inline-block;
     text-align: left;
   }
-
 }
 
 /*----------------------------------------------------------------------------------
