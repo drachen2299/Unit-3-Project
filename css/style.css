@@ -6,9 +6,18 @@
   box-sizing: border-box;
 }
 
-h1, h2, h3, input, legend, p, label {
+h2, h3, input, legend, p, label {
   font-family: 'PT Serif', serif;
+  line-height: 16px;
 }
+
+legend {
+  font-size: 24px;
+  font-weight: bold;
+
+}
+
+
 
 h1 {
   font-family: 'Kodchasan', sans-serif;
@@ -63,6 +72,7 @@ fieldset {
   display: block;
   border-top: 1px solid rgb(24, 30, 51);
   margin: 0 auto;
+  padding-top: 25px;
 }
 
 .forms2 {
@@ -96,6 +106,9 @@ textarea {
   height: 125px;
   margin: 0 auto;
   resize: none;
+  margin-top: 10px;
+
+
 }
 
 button {
@@ -106,32 +119,35 @@ button {
   margin: 0 auto;
   padding: 15px 32px;
   text-align: center;
-  text-decoration: none;
+  opacity: 0.6;
   display: inline-block;
   width: 100%;
   border-radius: 15px;
   height: 100px;
+  transition: 0.3s;
+  margin-top: 25px;
 }
 
-.chkbox {
-  display: block;
-  margin-bottom: 10px;
-}
 
 .chkbox input,
 .chkbox label {
   display: inline-block;
-  margin-bottom: 0;
-  vertical-align: middle;
+  margin-bottom: 12px;
+  white-space: nowrap;
+
+}
+.chkbox label {
+  padding-left: 5px;
 }
 
 .chkbox input {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 footer {
   font-family: 'Kodchasan', sans-serif;
   text-align: center;
+  font-style: italic;
 }
 
 /*----------------------------------------------------------------------------------
@@ -159,31 +175,36 @@ button:focus {
   outline: none;
 }
 
+button:hover {
+  opacity: 1;
+
+}
 /*----------------------------------------------------------------------------------
                                   Media Queries
 ----------------------------------------------------------------------------------*/
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .container {
-    max-width: 40%;
+    max-width: 70%;
   }
 
   .fs1 input[type=text],
   .fs1 input[type=email],
   .fs1 input[type=tel],
   .fs1 select {
-    width: 73%;
+    width: 70%;
   }
 
   .fs1 input:last-child {
     width: 30%;
   }
 
-  #zip [type=text] {
-    width: 30%;
+  .topic label {
+    width: 300px;
+    white-space: nowrap;
   }
 
   .fs1 label {
-    width: 26%;
+    width: 29%;
     display: inline-block;
     text-align: left;
   }
