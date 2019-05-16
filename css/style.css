@@ -17,6 +17,12 @@ legend {
   padding: 25px 0 25px 0;
 }
 
+.fs1 input,
+textarea,
+select {
+  border: transparent;
+}
+
 
 
 h1 {
@@ -129,7 +135,6 @@ button {
   width: 100%;
   border-radius: 15px;
   height: 100px;
-  transition: 0.3s;
   margin-top: 25px;
 }
 
@@ -164,6 +169,7 @@ textarea:focus,
 select:focus {
   border-radius: 2px;
   border: solid 1px rgb(24, 30, 51);
+  transition: border 1s;
 }
 
 input[type="text"]:focus,
@@ -179,6 +185,7 @@ button:active {
 
 button:focus {
   outline: none;
+  transition: 0.3s;
 }
 
 button:hover {
